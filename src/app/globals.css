@@ -1,0 +1,204 @@
+/* Reset CSS */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Reset CSS */
+
+/* Keyframes */
+@keyframes dissappear {
+  0%{}
+  100%{opacity: 0;}
+}
+.dissappear{
+animation: dissappear 1s both;
+}
+@keyframes appear {
+  0%{opacity: 0;}
+  100%{}
+}
+.appear{
+animation: appear 1s both;
+}
+/* Keyframes */
+
+/* General Classes */
+
+.displayNone{
+  display: none;
+}
+
+/* General Classes */
+
+
+/* Container */
+.container{
+  padding: 1em;
+display: flex;
+justify-content: start;
+align-items: center;
+font-family: sans-serif;
+}
+/* Container */
+
+/* Main Container */
+.mainContainer{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+/* Main Container */
+
+/* Menu */
+.menuBarBtnContainer{
+width: 300px;
+display: flex;
+flex-direction: column;
+gap: 0.5em;
+position: fixed;
+bottom: 1em;
+}
+.menuBarBtn {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-transform: uppercase; 
+  text-decoration: none;
+  text-align: start;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transform: skew(-10deg); /* Inclinar los bordes en -10 grados */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #2E2E30;
+  color: #FFFFFF;
+}
+
+.menuBarBtn:hover {
+  background-color: #3D3D40;
+  transform: scale(1.05) skew(-10deg); /* Inclinar los bordes al hacer hover */
+}
+
+.menuBarBtn:active {
+  transform: scale(0.95) skew(-10deg); /* Inclinar los bordes al hacer clic */
+}
+.arrowBack{
+  background-color: #2E2E30;
+  color: #FFFFFF;
+  display: inline;
+border-radius: 50%;
+padding: 0.2em;
+cursor: pointer;
+}
+.Btn1{
+
+}
+.Btn2{
+  
+}
+.Btn3{
+  
+}
+/* Menu */
+
+/* Projects Page */
+.projectsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projectsCard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.projectsCardTitle {
+  font-size: 24px;
+  font-weight: bold;
+text-align: center;
+}
+.projectsCardDescription{
+font-size: 12px;
+color: gray;
+text-align: center;
+}
+.projectsCardIcons {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.projectsCard .projectsCardImage {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 300px;
+}
+
+.projectsCardIcons {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transition: 1s;
+}
+
+.projectsCardIcons a {
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.projectsCard:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projectsCard:hover .projectsCardIcons {
+  opacity: 1;
+  transition: 1s;
+}
+
+/* Project Backgrounds */
+
+.bgSlider{
+  background: url(./assets/images/projectSlider.png);
+}
+.bgMaybelline{
+  background: url(./assets/images/projectMaybelline.png);
+}
+.bgPizza{
+  background: url(./assets/images/projectPizzeria.png);
+}
+.bgWeather{
+  background: url(./assets/images/projectWeatherfs.png);
+}
+/* Project Backgrounds */
+
+
+
+/* Projects Page */
+
+
+
+/* Media Queries */
+@media (min-width: 768px){
+
+}
+/* Media Queries */

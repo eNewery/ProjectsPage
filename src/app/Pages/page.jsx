@@ -26,9 +26,7 @@ const Pages = () => {
         <h2 class="projectsCardTitle">Weath3r</h2>
         <p class="projectsCardDescription">
         Weath3r es una aplicación web totalmente responsive que cumple con la función de informarte del clima actual en la ciudad que desees. Está hecho en nextjs consumiendo la api WeatherAPI.
-<p>
-  Recomendación: Usar en pantalla completa (F11)
-  </p>
+
         </p>
         <div className="projectsCardImage bgWeather"></div>
         <div class="projectsCardIcons">

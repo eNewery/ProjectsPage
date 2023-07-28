@@ -8,16 +8,30 @@
 /* Reset CSS */
 
 /* Keyframes */
+@keyframes appearMenu {
+0%{opacity: 0;transform: translateX(-20em) scale(0);} 
+100%{opacity:1; transform:translateX(0) scale(1);}
+}
+.appearMenu{
+  animation: appearMenu 1s both;
+}
+@keyframes dissappearMenu {
+  0%{opacity:1; transform:translateX(0) scale(1);}
+  100%{opacity: 0;transform: translateX(-20em) scale(0);} 
+  }
+  .dissappearMenu{
+    animation: dissappearMenu 1s both;
+  }
 @keyframes dissappear {
-  0%{}
-  100%{opacity: 0;}
+  0%{transform: translateY(0) scale(1); opacity: 1;}
+  100%{transform: translateY(-5em) scale(0); opacity: 0;}
 }
 .dissappear{
 animation: dissappear 1s both;
 }
 @keyframes appear {
-  0%{opacity: 0;}
-  100%{}
+  0%{transform: translateY(-5em) scale(0); opacity: 0;}
+  100%{transform: translateY(0) scale(1); opacity: 1;}
 }
 .appear{
 animation: appear 1s both;
@@ -27,7 +41,7 @@ animation: appear 1s both;
 /* General Classes */
 
 .displayNone{
-  display: none;
+  display: none !important;
 }
 
 /* General Classes */
@@ -59,6 +73,7 @@ flex-direction: column;
 gap: 0.5em;
 position: fixed;
 bottom: 1em;
+transform: translateX(-20em);
 }
 .menuBarBtn {
   font-family: sans-serif;
@@ -69,7 +84,7 @@ bottom: 1em;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transform: skew(-10deg); /* Inclinar los bordes en -10 grados */
+  transform: skew(-10deg); 
   transition: background-color 0.2s ease, transform 0.2s ease;
   padding: 15px 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -79,11 +94,17 @@ bottom: 1em;
 
 .menuBarBtn:hover {
   background-color: #3D3D40;
-  transform: scale(1.05) skew(-10deg); /* Inclinar los bordes al hacer hover */
+  transform: scale(1.05) skew(-10deg); 
 }
 
 .menuBarBtn:active {
-  transform: scale(0.95) skew(-10deg); /* Inclinar los bordes al hacer clic */
+  transform: scale(0.95) skew(-10deg); 
+}
+.arrowBackBtn{
+  background: none;
+  border: none;
+  text-align: start;
+transition: 1s;
 }
 .arrowBack{
   background-color: #2E2E30;
@@ -92,6 +113,7 @@ bottom: 1em;
 border-radius: 50%;
 padding: 0.2em;
 cursor: pointer;
+transition: 1s;
 }
 .Btn1{
 
